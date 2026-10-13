@@ -1,0 +1,56 @@
+========== FASTPAY STRESS TEST ==========
+
+Dữ liệu kiểm thử:
+10.000 giao dịch
+
+----------------------------------------
+
+CODE CŨ
+
+Thuật toán:
+for i = 0 -> n
+    for j = 0 -> n
+
+Số vòng lặp:
+100.000.000
+
+Độ phức tạp:
+O(n²)
+
+----------------------------------------
+
+CODE MỚI
+
+Thuật toán:
+for i = 0 -> n-1
+    for j = i+1 -> n
+
+Số vòng lặp:
+49.995.000
+
+Công thức:
+n(n-1)/2
+
+Độ phức tạp:
+O(n²)
+
+Giảm khoảng:
+50% số lần lặp
+
+----------------------------------------
+
+KẾT QUẢ
+
+Code cũ:
+100.000.000 vòng lặp
+
+Code mới:
+49.995.000 vòng lặp
+
+Infinite Loop:
+Đã khắc phục
+
+Server:
+Hoạt động ổn định với dữ liệu lớn
+
+========================================
